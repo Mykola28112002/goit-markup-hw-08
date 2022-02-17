@@ -1,0 +1,58 @@
+/* Заказать послугу */
+.hero {
+  background: $background-services;
+  text-align: center;
+  padding: 200px 0;
+}
+.hero__container {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image:  
+  linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),  
+  url("../images/Img123.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero__headline {
+  font-weight: $font-weight-blask;
+  font-size: 44px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.hero__button {
+  border: transparent;
+  cursor: pointer;
+  background: #2196F3;
+  font-weight: $font-weight-bold;
+  font-size: 16px;
+  align-items: center;
+  line-height: 1.9;
+  color: #FFFFFF;
+  margin-top: 30px;
+
+  padding: 10px 32px;
+  border-radius: 4px;
+
+  transition-property: box-shadow, border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+}
+
+
+
+
+

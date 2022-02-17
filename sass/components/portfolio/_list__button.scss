@@ -1,0 +1,37 @@
+/* Список кнопок */
+.list-nav {
+  display: flex;
+  justify-content: center;
+  &__item:not(:first-child) {
+    margin-left: 8px;
+  }
+}
+.list-nav__button {
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  background: #F5F4FA;
+  border-radius: 4px;
+  font-weight: $font-weight-medium;
+  font-size: 16px;
+  line-height: 1.6;
+  color: $main-text-color;
+  padding: 6px 22px;
+  border-color: #F5F4FA;
+  border: transparent;
+
+  transition-property: color, border-color, filter, background, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: #FFFFFF;
+    border-color: #2196F3;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+
+
+

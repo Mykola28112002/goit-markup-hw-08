@@ -1,0 +1,142 @@
+/* Шапка */
+
+
+
+.cap {
+  border-bottom: 1px solid #ECECEC;
+
+}
+.container--cap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link__logo {
+display: block;
+padding-top: 24px; 
+padding-bottom: 25px;
+color: #2196F3;
+text-decoration: none;
+font-family: Raleway;
+font-weight: $font-weight-bold;
+font-size: 26px;
+line-height: 1.2;
+
+}
+.nav-link__logo-studio {
+  color:  $main-text-color;
+}
+
+
+.site-navigation {
+  margin-left: 93px;
+  display: flex;
+}
+
+.site-navigation__item {
+  display: block;
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.site-navigation__link {
+  display: block;
+  font-weight: $font-weight-medium;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $main-text-color ;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus
+  {
+    color: #2196F3;
+    fill: #2196F3;
+  }
+  
+}
+  
+.site-navigation__active::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background: #2196F3;
+  border-radius: 2px;
+  display: flex;
+  top: 97%;
+  &active {
+  color: #2196F3;
+}
+}
+
+
+
+.contacts {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  &__item:not(:last-child) {
+  margin-right: 30px;
+}
+}
+
+.contacts__link {
+  display: inline-flex;
+  font-weight: $font-weight-medium;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $secondary-text-color;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  fill: #757575;
+  align-items: center;
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover,
+  &:focus
+  {
+    color: #2196F3;
+    fill: #2196F3;
+  }
+}
+
+.contacts__svg {
+  height: 16px;
+  width: 10px;
+  margin-right: 10px;
+  align-items: center;
+}
+.contacts__imgs {
+  height: 12px;
+  width: 16px;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

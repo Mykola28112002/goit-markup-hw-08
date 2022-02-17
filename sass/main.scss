@@ -1,0 +1,21 @@
+/* oсновні стилі */
+@import "./utils/variables";
+@import "./base/basic-styles";
+/* Стундія */
+@import "./components/main-page/cap";
+@import "./components/main-page/hero";
+@import "./components/main-page/peculiarities";
+@import "./components/main-page/employment";
+@import "./components/main-page/team";
+@import "./components/main-page/customers";
+@import "./components/main-page/footer";
+@import "./components/main-page/footer__form";
+@import "./components/main-page/js-speaker-form";
+@import "./components/main-page/modal";
+/* Портфоліо */
+@import "./components/portfolio/list__button";
+@import "./components/portfolio/examples";
+
+
+
+

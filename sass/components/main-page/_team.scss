@@ -1,0 +1,88 @@
+/* команда */
+
+
+
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+  
+
+.team__item {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+  
+
+.team-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team-box__title {
+font-weight: $font-weight-medium;
+font-size: 16px;
+line-height: 1.2;
+text-align: center;
+color: $main-text-color;
+}
+.team-box__text {
+font-size: 16px;
+line-height: 1.2;
+text-align: center;
+color: $secondary-text-color;
+margin-top: 10px;
+}
+
+
+.networks {
+  margin-top: 16px;
+  justify-content: center;
+  display: flex;
+  &__items:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+
+.networks__imgs {
+  height: 20px;
+  width: 20px;
+
+
+}
+.networks__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  fill: #AFB1B8;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  transition-property: background, fill, border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-radius: 50%;
+    background: #2196F3;
+    fill: #FFFFFF;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
