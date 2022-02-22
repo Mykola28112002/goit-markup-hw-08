@@ -5,11 +5,13 @@
 }
 
 .form__container {
-  margin-top: 20px;
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    margin-top: 20px;
+    display: flex;
+  }
 }
 .form__button {
-  margin-left: 12px;
+  
   border: transparent;
   cursor: pointer;
   padding: 10px 28px;
@@ -17,15 +19,24 @@
   font-weight: $font-weight-bold;
   font-size: 16px;
   line-height: 1.9;
-  display: flex;
-  align-items: center;
-  text-align: center;
   background-color: #2196F3;
   color: #FFFFFF;
   border-radius: 4px;
   transition-property: background-color, box-shadow, border-radius;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+    display: flex;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+
 
   &:hover,
   &:focus {
@@ -41,10 +52,13 @@
   line-height: 1.2;
   text-transform: uppercase;
   color: #FFFFFF;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
 
 }
-.form__mail {
-  width: 358px;
+.form__mail { 
   min-height: 50px;
   padding: 15px 16px;
   background-color: $footer-bascground;
@@ -53,6 +67,12 @@
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 .form__svg {
   width: 24px;

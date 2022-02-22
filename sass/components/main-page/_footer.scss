@@ -2,12 +2,30 @@
 
 .footers {
   background: $footer-bascground;
+  width: 100%;
   padding: 60px 0;
-  &--flex {
-  display: flex;
-  align-items: baseline;
-}
+  @media screen and (min-width: 1200px) {
+    &--flex {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    text-align: center;
+  }
 }  
+
+.footers__box {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
 
 .footers__logo-studios {
   color: #FFFFFF;
@@ -51,15 +69,26 @@
 
 
 .social {
-  margin-left: 70px;
   &__items:not(:last-child) {
-    margin-right: 10px;
+      margin-right: 10px;
+    }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 165px;
   }
 }
 .social__margin-top {
   margin-top: 20px;
   display: flex;
   align-items: baseline;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    justify-content: center
+  }
 }
 .social__title {
   font-weight: $font-weight-bold;

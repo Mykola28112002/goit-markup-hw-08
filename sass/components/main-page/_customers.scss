@@ -2,8 +2,16 @@
 
 
 .customers {
-  display: flex;
-  margin-top: 50px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-top: 50px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    display: flex;
+    margin: -15px;
+  }
+
 }
   
 
@@ -35,9 +43,20 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .customers__item {
   width: 170px;
   height: 92px;
-  &:not(:last-child) {
-  margin-right: 30px;
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+   @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
 }
-}
+
 
 
