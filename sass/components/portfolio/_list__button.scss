@@ -5,7 +5,7 @@
     margin-left: 8px;
   }
  
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     flex-wrap: wrap;
     &__item:nth-child(4) {
       margin-left: 0;

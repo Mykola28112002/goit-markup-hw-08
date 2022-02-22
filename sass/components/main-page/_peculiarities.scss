@@ -20,7 +20,7 @@
     flex-wrap: wrap;
     margin: -15px;
   }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     &__item:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -33,7 +33,7 @@
   line-height: 1.2;
   text-transform: uppercase;
   color:  $main-text-color;
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
   }
 }

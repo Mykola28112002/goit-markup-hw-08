@@ -36,7 +36,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 480px;
   }
@@ -67,7 +67,7 @@ ul {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -85,7 +85,7 @@ ul {
   line-height: 1.2;
   text-align: center;
   color: $main-text-color;
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen  and (max-width: 1199px) {
     margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
@@ -98,7 +98,7 @@ ul {
 }
 
 img {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen  and (max-width: 767px) {
     width: 450px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {

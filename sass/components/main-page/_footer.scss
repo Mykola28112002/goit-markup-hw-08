@@ -10,7 +10,7 @@
       align-items: baseline;
     }
   }
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
 }  
@@ -75,7 +75,7 @@
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
   }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-top: 60px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -86,7 +86,7 @@
   margin-top: 20px;
   display: flex;
   align-items: baseline;
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     justify-content: center
   }
 }
