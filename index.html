@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -142,19 +143,28 @@
             <ul class="employment">
                 <li class="employment__item">
                     <div class="employment__box">
-                        <img src="images/img11.jpg" alt="Програмист набирает код" width="370">
+                        <picture>
+                            <source srcset="images/comp.jpg 1x, images/comp@2x.jpg 2x" type="image/jpg" />
+                            <img src="images/comp.jpg" alt="Програмист набирает код" width="370">
+                        </picture>
                         <p class="employment__text">Десктопные приложения</p>
                     </div>
                 </li>
                 <li class="employment__item">
                     <div class="employment__box">
-                        <img src="images/hhhhh.jpg" alt="Програмист создаёт мобильное приложение" width="370">
+                        <picture>
+                            <source srcset="images/application.jpg 1x, images/application@2x.jpg 2x" type="image/jpg" />
+                            <img src="images/application.jpg" alt="Програмист создаёт мобильное приложение" width="370">
+                        </picture>
                         <p class="employment__text">Мобильные приложения</p>
                     </div>
                 </li>
                 <li class="employment__item">
                     <div class="employment__box">
-                        <img src="images/img12.jpg" alt="Програмист показывает графический дизайн" width="370">
+                        <picture>
+                            <source srcset="images/desing.jpg 1x, images/desing@2x.jpg 2x" type="image/jpg" />
+                            <img src="images/desing.jpg" alt="Програмист показывает графический дизайн" width="370">
+                        </picture>
                         <p class="employment__text">Дизайнерские решения</p>
                     </div>
                 </li>
@@ -167,7 +177,12 @@
             <h2 class="section__title">Наша команда</h2>
             <ul class="team">
                 <li class="team__item">
-                    <img src="images/img-3.jpg" alt="Парень в очках держыт ноутбук.Улыбается " width="270">
+                    <picture>
+                        <source  srcset="images/produkt-tel.jpg 1x , images/produkt-tel@2x.jpg 2x"  type="image/jpg" media="(max-width: 767px)" >
+                        <source srcset="images/produkt-tabl.jpg 1x , images/produkt-tabl@2x.jpg 2x" type="image/jpg" media="(min-width: 768px) and (max-width: 1199px)">
+                        <source srcset="images/produkt-desk.jpg 1x , images/produkt-desk@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)">
+                        <img src="images/produkt-tel.jpg" alt="Парень в очках держыт ноутбук.Улыбается " width="270" >
+                    </picture>
                     <div class="team-box">
                         <h3 class="team-box__title">Игорь Демьяненко</h3>
                         <p class=" team-box__text">Product Designer</p>
@@ -204,7 +219,13 @@
                     </div>   
                 </li>
                 <li class="team__item">
-                    <img src="images/img-2.jpg" alt="Девушка блондинка в очках.Улыбается" width="270">
+                    <picture>
+                        <source srcset="images/frontend-tel.jpg 1x , images/frontend-tel@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)">
+                        <source srcset="images/frontend-tabl.jpg 1x , images/frontend-tabl@2x.jpg 2x" type="image/jpg" media="(min-width: 768px) and (max-width: 1199px)">
+                        <source srcset="images/frontend-desk.jpg 1x , images/frontend-desk@2x.jpg 2x" type="image/jpg"
+                            media="(min-width: 1200px)">
+                        <img src="images/frontend-tel.jpg" alt="Девушка блондинка в очках.Улыбается" width="270">
+                    </picture>
                     <div class="team-box">
                         <h3 class="team-box__title">Ольга Репина</h3>
                         <p class="team-box__text">Frontend Developer</p>
@@ -241,7 +262,15 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img src="images/img-1.jpg" alt="Парень в светлой рубашке.Улыбается" width="270">
+                    <picture>
+                        <source srcset="images/marketing-tel.jpg 1x , images/marketing-tel@2x.jpg 2x" type="image/jpg"
+                            media="(max-width: 767px)">
+                        <source srcset="images/marketing-tabl.jpg 1x , images/marketing-tabl@2x.jpg 2x" type="image/jpg"
+                            media="(min-width: 768px) and (max-width: 1199px)">
+                        <source srcset="images/marketing-desk.jpg 1x , images/marketing-desk@2x.jpg 2x" type="image/jpg"
+                            media="(min-width: 1200px)">
+                        <img src="images/marketing-tel.jpg" alt="Парень в светлой рубашке.Улыбается" width="270">
+                    </picture>
                     <div class="team-box">
                         <h3 class="team-box__title">Николай Тарасов</h3>
                         <p class="team-box__text">Marketing</p>
@@ -278,7 +307,15 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img src="images/img(11).jpg" alt="Парень в очках и чёорной футболке.Улыбается" width="270">
+                    <picture>
+                        <source srcset="images/desinger-tel.jpg 1x , images/desinger-tel@2x.jpg 2x" type="image/jpg"
+                            media="(max-width: 767px)">
+                        <source srcset="images/desinger-tabl.jpg 1x , images/desinger-tabl@2x.jpg 2x" type="image/jpg"
+                            media="(min-width: 768px) and (max-width: 1199px)">
+                        <source srcset="images/desinger-desk.jpg 1x , images/desinger-desk@2x.jpg 2x" type="image/jpg"
+                            media="(min-width: 1200px)">
+                        <img src="images/desinger-tel.jpg" alt="Парень в очках и чёорной футболке.Улыбается" width="270">
+                    </picture>
                     <div class="team-box">
                         <h3 class="team-box__title">Михаил Ермаков</h3>
                         <p  class="team-box__text">UI Designer</p>

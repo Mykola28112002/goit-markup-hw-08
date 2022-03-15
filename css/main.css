@@ -207,7 +207,6 @@ ul {
     min-width: 480px;
     width: 100%;
     height: 100%;
-    overflow-y: scroll;
   }
   .menu-container.is-open {
     display: block;
@@ -361,8 +360,10 @@ ul {
   fill: #2196F3;
 }
 
-.contacts__svg {
-  display: none;
+@media screen and (max-width: 767px) {
+  .contacts__svg {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .contacts__svg {
@@ -373,8 +374,10 @@ ul {
   }
 }
 
-.contacts__imgs {
-  display: none;
+@media screen and (max-width: 767px) {
+  .contacts__imgs {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .contacts__imgs {
@@ -420,6 +423,10 @@ ul {
   color: #2196F3;
 }
 
+.modal-open {
+  overflow-y: hidden;
+}
+
 /* Заказать послугу */
 .hero {
   background: #2F303A;
@@ -463,6 +470,36 @@ ul {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .hero__container {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Header-tel.jpg");
+  }
+}
+@media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero__container {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Header-tel@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__container {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Header-tabl.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero__container {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Header-tabl@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Header-desk.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero__container {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Header-desk@2x.jpg");
+  }
+}
 .hero__headline {
   font-weight: 900;
   font-size: 44px;
@@ -511,7 +548,7 @@ ul {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .peculiarities__item {
-    width: calc((100% - 2 * 30px) / 2);
+    width: calc((100% - 60px) / 2);
     margin: 15px;
   }
 }
@@ -585,7 +622,7 @@ ul {
   position: absolute;
   width: 100%;
   background: rgba(47, 48, 58, 0.8);
-  transform: translateY(calc(-100%));
+  transform: translateY(-100%);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
@@ -630,7 +667,7 @@ ul {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__item {
-    width: calc((100% - 2 * 30px) / 2);
+    width: calc((100% - 60px) / 2);
     margin: 15px;
   }
 }
@@ -738,13 +775,13 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .customers__item {
-    width: calc((100% - 2 * 30px) / 2);
+    width: calc((100% - 60px) / 2);
     margin: 15px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .customers__item {
-    width: calc((100% - 3 * 30px) / 3);
+    width: calc((100% - 90px) / 3);
     margin: 15px;
   }
 }
