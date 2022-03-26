@@ -461,6 +461,11 @@ img {
   overflow-y: hidden;
 }
 
+@media screen and (max-width: 767px) {
+  .site-navigation__active {
+    color: #2196F3;
+  }
+}
 /* Заказать послугу */
 .hero {
   background: #2F303A;
