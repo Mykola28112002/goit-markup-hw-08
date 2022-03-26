@@ -2,6 +2,9 @@
 
 .form {
   margin-left: auto;
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+  }
 }
 
 .form__container {
@@ -53,12 +56,12 @@
   text-transform: uppercase;
   color: #FFFFFF;
   @media screen and (max-width: 1199px) {
-    margin-top: 60px;
     margin-bottom: 20px;
   }
 
 }
 .form__mail { 
+  width: 100%;
   min-height: 50px;
   padding: 15px 16px;
   background-color: $footer-bascground;
@@ -67,12 +70,10 @@
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  @media screen and (max-width: 1199px) {
-    width: 450px;
-  }
   @media screen and (min-width: 1200px) {
     width: 358px;
   }
+  max-width: 450px;
 }
 .form__svg {
   width: 24px;

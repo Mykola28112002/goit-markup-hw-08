@@ -20,7 +20,7 @@
 <!--Шапка-->
 <header class="cap">
     <div class="container cap--flex">
-        <nav class="nav-link">
+        <div class="nav-link">
             <a class="nav-link__logo" href="./index.html">Web<span
                         class="nav-link__logo-studio">Studio</span>
             </a>
@@ -35,19 +35,22 @@
                     <use class="icon-menu" href="images/symbol-defs.svg#icon-menu"></use>
                 </svg>
             </button>
-        </nav>
-            <div class="menu-container" id="menu-container" data-menu>
-                <ul class="site-navigation">
-                    <li class="site-navigation__item">
-                        <a viewport class="site-navigation__link  site-navigation__active" href="./index.html">Студия</a>
-                    </li>
-                    <li class="site-navigation__item">
-                        <a viewport class="site-navigation__link" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="site-navigation__item">
-                        <a viewport class="site-navigation__link" href="">Контакты</a>
-                    </li>
-                </ul>
+        </div>
+        <div class="menu-container" id="menu-container">
+            <div class="menu-container__box">
+                <nav class="menu-container__nav">
+                    <ul class="site-navigation">
+                        <li class="site-navigation__item">
+                            <a class="site-navigation__link  site-navigation__active" href="./index.html">Студия</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a class="site-navigation__link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a class="site-navigation__link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
                 <ul class="contacts">
                     <li class="contacts__item">
                         <a class="contacts__link contacts__link--mail" href="mailto:info@devstudio.com">
@@ -81,13 +84,66 @@
                 </ul>
             </div>
         </div>
+        
+        <div class="menu-container-tel" id="menu-container-tel" data-menu>
+            <div class="menu-container__box">
+                <nav class="menu-container__nav">
+                    <ul class="site-navigation">
+                        <li class="site-navigation__item">
+                            <a class="site-navigation__link  site-navigation__active" href="./index.html">Студия</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a class="site-navigation__link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a class="site-navigation__link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div>
+                    <ul class="contacts">
+                        <li class="contacts__item">
+                            <a class="contacts__link contacts__link--mail" href="mailto:info@devstudio.com">
+                                <svg class="contacts__imgs">
+                                    <use href="images/symbol-defs.svg#icon-envelope-2">
+                                    </use>
+                                </svg>info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link contacts__link--tel" href="tel:+380961111111">
+                                <svg class="contacts__svg">
+                                    <use href="images/symbol-defs.svg#icon-smartphone-1"></use>
+                                </svg>+38 099 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="socials">
+                        <li class="socials__item">
+                            <a class="socials__link" href="">Instagram</a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="">Twitter</a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="">Facebook</a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 <main>
     <!--Заказать послугу-->
     <section  class="hero hero__container">     
-        <h1 class="hero__headline">Эффективные решения<br> для вашего бизнеса</h1>
-        <button data-modal-open class="hero__button" type="button">Заказать услугу</button>
+        <div class="container">
+            <h1 class="hero__headline">Эффективные решения<br> для вашего бизнеса</h1>
+            <button data-modal-open class="hero__button" type="button">Заказать услугу</button>
+        </div>
     </section>
     <!--Особливості-->
     <section class="section">
@@ -144,7 +200,7 @@
                 <li class="employment__item">
                     <div class="employment__box">
                         <picture>
-                            <source srcset="images/comp.jpg 1x, images/comp@2x.jpg 2x" type="image/jpg" />
+                            <source srcset="images/comp.jpg 1x, images/comp@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)"/>
                             <img src="images/comp.jpg" alt="Програмист набирает код" width="370">
                         </picture>
                         <p class="employment__text">Десктопные приложения</p>
@@ -153,7 +209,7 @@
                 <li class="employment__item">
                     <div class="employment__box">
                         <picture>
-                            <source srcset="images/application.jpg 1x, images/application@2x.jpg 2x" type="image/jpg" />
+                            <source srcset="images/application.jpg 1x, images/application@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)" />
                             <img src="images/application.jpg" alt="Програмист создаёт мобильное приложение" width="370">
                         </picture>
                         <p class="employment__text">Мобильные приложения</p>
@@ -162,7 +218,7 @@
                 <li class="employment__item">
                     <div class="employment__box">
                         <picture>
-                            <source srcset="images/desing.jpg 1x, images/desing@2x.jpg 2x" type="image/jpg" />
+                            <source srcset="images/desing.jpg 1x, images/desing@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)" />
                             <img src="images/desing.jpg" alt="Програмист показывает графический дизайн" width="370">
                         </picture>
                         <p class="employment__text">Дизайнерские решения</p>
@@ -178,9 +234,11 @@
             <ul class="team">
                 <li class="team__item">
                     <picture>
+                        <source srcset="images/produkt-desk.jpg 1x , images/produkt-desk@2x.jpg 2x" type="image/jpg"
+                            media="(min-width: 1200px)">
+                        <source srcset="images/produkt-tabl.jpg 1x , images/produkt-tabl@2x.jpg 2x" type="image/jpg"
+                            media="(min-width: 768px) and (max-width: 1199px)">
                         <source  srcset="images/produkt-tel.jpg 1x , images/produkt-tel@2x.jpg 2x"  type="image/jpg" media="(max-width: 767px)" >
-                        <source srcset="images/produkt-tabl.jpg 1x , images/produkt-tabl@2x.jpg 2x" type="image/jpg" media="(min-width: 768px) and (max-width: 1199px)">
-                        <source srcset="images/produkt-desk.jpg 1x , images/produkt-desk@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)">
                         <img src="images/produkt-tel.jpg" alt="Парень в очках держыт ноутбук.Улыбается " width="270" >
                     </picture>
                     <div class="team-box">
@@ -220,10 +278,10 @@
                 </li>
                 <li class="team__item">
                     <picture>
+                        <source srcset="images/frontend-desk.jpg 1x , images/frontend-desk@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)">
+                        <source srcset="images/frontend-tabl.jpg 1x , images/frontend-tabl@2x.jpg 2x" type="image/jpg"
+                            media="(min-width: 768px) and (max-width: 1199px)">
                         <source srcset="images/frontend-tel.jpg 1x , images/frontend-tel@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)">
-                        <source srcset="images/frontend-tabl.jpg 1x , images/frontend-tabl@2x.jpg 2x" type="image/jpg" media="(min-width: 768px) and (max-width: 1199px)">
-                        <source srcset="images/frontend-desk.jpg 1x , images/frontend-desk@2x.jpg 2x" type="image/jpg"
-                            media="(min-width: 1200px)">
                         <img src="images/frontend-tel.jpg" alt="Девушка блондинка в очках.Улыбается" width="270">
                     </picture>
                     <div class="team-box">
@@ -263,12 +321,12 @@
                 </li>
                 <li class="team__item">
                     <picture>
-                        <source srcset="images/marketing-tel.jpg 1x , images/marketing-tel@2x.jpg 2x" type="image/jpg"
-                            media="(max-width: 767px)">
-                        <source srcset="images/marketing-tabl.jpg 1x , images/marketing-tabl@2x.jpg 2x" type="image/jpg"
-                            media="(min-width: 768px) and (max-width: 1199px)">
                         <source srcset="images/marketing-desk.jpg 1x , images/marketing-desk@2x.jpg 2x" type="image/jpg"
                             media="(min-width: 1200px)">
+                        <source srcset="images/marketing-tabl.jpg 1x , images/marketing-tabl@2x.jpg 2x" type="image/jpg"
+                            media="(min-width: 768px) and (max-width: 1199px)">
+                        <source srcset="images/marketing-tel.jpg 1x , images/marketing-tel@2x.jpg 2x" type="image/jpg"
+                            media="(max-width: 767px)">
                         <img src="images/marketing-tel.jpg" alt="Парень в светлой рубашке.Улыбается" width="270">
                     </picture>
                     <div class="team-box">
@@ -308,12 +366,12 @@
                 </li>
                 <li class="team__item">
                     <picture>
-                        <source srcset="images/desinger-tel.jpg 1x , images/desinger-tel@2x.jpg 2x" type="image/jpg"
-                            media="(max-width: 767px)">
-                        <source srcset="images/desinger-tabl.jpg 1x , images/desinger-tabl@2x.jpg 2x" type="image/jpg"
-                            media="(min-width: 768px) and (max-width: 1199px)">
                         <source srcset="images/desinger-desk.jpg 1x , images/desinger-desk@2x.jpg 2x" type="image/jpg"
                             media="(min-width: 1200px)">
+                        <source srcset="images/desinger-tabl.jpg 1x , images/desinger-tabl@2x.jpg 2x" type="image/jpg"
+                            media="(min-width: 768px) and (max-width: 1199px)">
+                        <source srcset="images/desinger-tel.jpg 1x , images/desinger-tel@2x.jpg 2x" type="image/jpg"
+                            media="(max-width: 767px)">
                         <img src="images/desinger-tel.jpg" alt="Парень в очках и чёорной футболке.Улыбается" width="270">
                     </picture>
                     <div class="team-box">
@@ -471,7 +529,7 @@
             <h2 class="form__title">Подпишитесь на рассылку</h2>
             <div class="form__container">
                 <label>
-                    <input class="form__mail" name="mail" type="mail" id="mails" placeholder="E-mail">
+                    <input class="form__mail" name="mail" type="email" id="mails" placeholder="E-mail">
                 </label>
                 <button class="form__button">Подписаться
                     <svg class="form__svg">
@@ -523,7 +581,7 @@
                         <label class="js-box__label" for="mail">
                             Почта
                         </label>
-                        <input class="js-box__input" type="mail" id="mail" name="mail">
+                        <input class="js-box__input" type="email" id="mail" name="mail">
                         <svg class="js-box__svg">
                             <use href="images/symbol-defs.svg#icon-Vector-3"></use>
                         </svg>

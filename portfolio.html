@@ -21,7 +21,7 @@
     <!--шапка-->
 <header class="cap">
     <div class="container cap--flex">
-        <nav class="nav-link">
+        <div class="nav-link">
             <a class="nav-link__logo" href="./index.html">Web<span class="nav-link__logo-studio">Studio</span>
             </a>
             <button type="button" class="menu-button " aria-expanded="false" aria-controls="menu-container"
@@ -31,52 +31,106 @@
                     <use class="icon-menu" href="images/symbol-defs.svg#icon-menu"></use>
                 </svg>
             </button>
-        </nav>
-        <div class="menu-container" id="menu-container" data-menu>
-            <ul class="site-navigation">
-                <li class="site-navigation__item">
-                    <a class="site-navigation__link  " href="./index.html">Студия</a>
-                </li>
-                <li class="site-navigation__item">
-                    <a class="site-navigation__link site-navigation__active" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="site-navigation__item">
-                    <a class="site-navigation__link" href="">Контакты</a>
-                </li>
-            </ul>
-            <ul class="contacts">
-                <li class="contacts__item">
-                    <a class="contacts__link contacts__link--mail" href="mailto:info@devstudio.com">
-                        <svg class="contacts__imgs">
-                            <use href="images/symbol-defs.svg#icon-envelope-2">
-                            </use>
-                        </svg>info@devstudio.com
-                    </a>
-                </li>
-                <li class="contacts__item">
-                    <a class="contacts__link contacts__link--tel" href="tel:+380961111111">
-                        <svg class="contacts__svg">
-                            <use href="images/symbol-defs.svg#icon-smartphone-1"></use>
-                        </svg>+38 099 111 11 11
-                    </a>
-                </li>
-            </ul>
-            <ul class="socials">
-                <li class="socials__item">
-                    <a class="socials__link" href="">Instagram</a>
-                </li>
-                <li class="socials__item">
-                    <a class="socials__link" href="">Twitter</a>
-                </li>
-                <li class="socials__item">
-                    <a class="socials__link" href="">Facebook</a>
-                </li>
-                <li class="socials__item">
-                    <a class="socials__link" href="">Linkedin</a>
-                </li>
-            </ul>
         </div>
-    </div>
+        <div class="menu-container" id="menu-container">
+            <div class="menu-container__box">
+                <nav class="menu-container__nav">
+                    <ul class="site-navigation">
+                        <li class="site-navigation__item">
+                            <a class="site-navigation__link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a class="site-navigation__link  site-navigation__active" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a class="site-navigation__link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="contacts">
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--mail" href="mailto:info@devstudio.com">
+                            <svg class="contacts__imgs">
+                                <use href="images/symbol-defs.svg#icon-envelope-2">
+                                </use>
+                            </svg>info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--tel" href="tel:+380961111111">
+                            <svg class="contacts__svg">
+                                <use href="images/symbol-defs.svg#icon-smartphone-1"></use>
+                            </svg>+38 099 111 11 11
+                        </a>
+                    </li>
+                </ul>
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a class="socials__link" href="">Instagram</a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="">Twitter</a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="">Facebook</a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="menu-container-tel" id="menu-container-tel" data-menu>
+            <div class="menu-container__box">
+                <nav class="menu-container__nav">
+                    <ul class="site-navigation">
+                        <li class="site-navigation__item">
+                            <a class="site-navigation__link  site-navigation__active" href="./index.html">Студия</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a class="site-navigation__link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a class="site-navigation__link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div>
+                    <ul class="contacts">
+                        <li class="contacts__item">
+                            <a class="contacts__link contacts__link--mail" href="mailto:info@devstudio.com">
+                                <svg class="contacts__imgs">
+                                    <use href="images/symbol-defs.svg#icon-envelope-2">
+                                    </use>
+                                </svg>info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link contacts__link--tel" href="tel:+380961111111">
+                                <svg class="contacts__svg">
+                                    <use href="images/symbol-defs.svg#icon-smartphone-1"></use>
+                                </svg>+38 099 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="socials">
+                        <li class="socials__item">
+                            <a class="socials__link" href="">Instagram</a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="">Twitter</a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="">Facebook</a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 <main>
@@ -97,12 +151,11 @@
                     <a class="portfolio__link" href="">
                         <div class="portfolio__box">
                             <picture>
-                                <source srcset="images/veb-tel.jpg 1x, images/veb-tel@2x.jpg 2x" type="image/jpg"
-                                    media="(max-width: 767px)">
+                                <source srcset="images/veb-desk.jpg 1x , images/veb-desk@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)">
                                 <source srcset="images/veb-tabl.jpg 1x , images/veb-tabl@2x.jpg 2x" type="image/jpg"
                                     media="(min-width: 768px) and (max-width: 1199px)">
-                                <source srcset="images/veb-desk.jpg 1x , images/veb-desk@2x.jpg 2x" type="image/jpg"
-                                    media="(min-width: 1200px)">
+                                <source srcset="images/veb-tel.jpg 1x, images/veb-tel@2x.jpg 2x" type="image/jpg"
+                                    media="(max-width: 767px)">
                                 <img src="images/veb-tel.jpg" alt="Веб-сайт" width="370">
                             </picture>
                             <div class="portfolio__animation">
@@ -121,11 +174,11 @@
                     <a class="portfolio__link" href="">
                         <div class="portfolio__box">
                             <picture>
-                                <source srcset="images/NewOrlean-tel.jpg 1x, images/NewOrlean-tel@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)">
-                                <source srcset="images/NewOrlean-tabl.jpg 1x , images/NewOrlean-tabl@2x.jpg 2x" type="image/jpg"
-                                    media="(min-width: 768px) and (max-width: 1199px)">
                                 <source srcset="images/NewOrlean-desk.jpg 1x , images/NewOrlean-desk@2x.jpg 2x" type="image/jpg"
                                     media="(min-width: 1200px)">
+                                <source srcset="images/NewOrlean-tabl.jpg 1x , images/NewOrlean-tabl@2x.jpg 2x" type="image/jpg"
+                                    media="(min-width: 768px) and (max-width: 1199px)">
+                                <source srcset="images/NewOrlean-tel.jpg 1x, images/NewOrlean-tel@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)">
                                 <img src="images/NewOrlean-tel.jpg" alt="Дизайн" width="370">
                             </picture>
                             <div class="portfolio__animation">
@@ -144,12 +197,12 @@
                     <a class="portfolio__link" href="">
                         <div class="portfolio__box">
                             <picture>
-                                <source srcset="images/Seafood-tel.jpg 1x, images/Seafood-tel@2x.jpg 2x" type="image/jpg"
-                                    media="(max-width: 767px)">
-                                <source srcset="images/Seafood-tabl.jpg 1x , images/Seafood-tabl@2x.jpg 2x" type="image/jpg"
-                                    media="(min-width: 768px) and (max-width: 1199px)">
                                 <source srcset="images/Seafood-desk.jpg 1x , images/Seafood-desk@2x.jpg 2x" type="image/jpg"
                                     media="(min-width: 1200px)">
+                                <source srcset="images/Seafood-tabl.jpg 1x , images/Seafood-tabl@2x.jpg 2x" type="image/jpg"
+                                    media="(min-width: 768px) and (max-width: 1199px)">
+                                <source srcset="images/Seafood-tel.jpg 1x, images/Seafood-tel@2x.jpg 2x" type="image/jpg"
+                                    media="(max-width: 767px)">
                                 <img src="images/img(3).jpg" alt="Приложение" width="370">
                             </picture>
                             <div class="portfolio__animation">
@@ -168,12 +221,11 @@
                     <a class="portfolio__link" href="">
                         <div class="portfolio__box">
                             <picture>
-                                <source srcset="images/Prime-tel.jpg 1x, images/Prime-tel@2x.jpg 2x" type="image/jpg"
-                                    media="(max-width: 767px)">
+                                <source srcset="images/Prime-desk.jpg 1x , images/Prime-desk@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)">
                                 <source srcset="images/Prime-tabl.jpg 1x , images/Prime-tabl@2x.jpg 2x" type="image/jpg"
                                     media="(min-width: 768px) and (max-width: 1199px)">
-                                <source srcset="images/Prime-desk.jpg 1x , images/Prime-desk@2x.jpg 2x" type="image/jpg"
-                                    media="(min-width: 1200px)">
+                                <source srcset="images/Prime-tel.jpg 1x, images/Prime-tel@2x.jpg 2x" type="image/jpg"
+                                    media="(max-width: 767px)">
                                 <img src="images/img(4).jpg" alt="Маркетин" width="370">
                             </picture>
                             <div class="portfolio__animation">
@@ -192,11 +244,10 @@
                     <a class="portfolio__link" href="">
                         <div class="portfolio__box">
                             <picture>
-                                <source srcset="images/Boxes-tel.jpg 1x, images/Boxes-tel@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)">
+                                <source srcset="images/Boxes-desk.jpg 1x , images/Boxes-desk@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)">
                                 <source srcset="images/Boxes-tabl.jpg 1x , images/Boxes-tabl@2x.jpg 2x" type="image/jpg"
                                     media="(min-width: 768px) and (max-width: 1199px)">
-                                <source srcset="images/Boxes-desk.jpg 1x , images/Boxes-desk@2x.jpg 2x" type="image/jpg"
-                                    media="(min-width: 1200px)">
+                                <source srcset="images/Boxes-tel.jpg 1x, images/Boxes-tel@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)">
                                 <img src="images/img(5).jpg" alt="Приложение" width="370">
                             </picture>
                             <div class="portfolio__animation">
@@ -215,11 +266,11 @@
                     <a class="portfolio__link" href="">
                         <div class="portfolio__box">
                             <picture>
-                                <source srcset="images/Inspiration-tel.jpg 1x, images/Inspiration-tel@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)">
-                                <source srcset="images/Inspiration-tabl.jpg 1x , images/Inspiration-tabl@2x.jpg 2x" type="image/jpg"
-                                    media="(min-width: 768px) and (max-width: 1199px)">
                                 <source srcset="images/Inspiration-desk.jpg 1x , images/Inspiration-desk@2x.jpg 2x" type="image/jpg"
                                     media="(min-width: 1200px)">
+                                <source srcset="images/Inspiration-tabl.jpg 1x , images/Inspiration-tabl@2x.jpg 2x" type="image/jpg"
+                                    media="(min-width: 768px) and (max-width: 1199px)">
+                                <source srcset="images/Inspiration-tel.jpg 1x, images/Inspiration-tel@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)">
                                 <img src="images/img(6).jpg" alt="Веб-сайт" width="370">
                             </picture>
                             <div class="portfolio__animation">
@@ -238,12 +289,12 @@
                     <a class="portfolio__link" href="">
                         <div class="portfolio__box">
                             <picture>
-                                <source srcset="images/Limited-tel.jpg 1x, images/Limited-tel@2x.jpg 2x" type="image/jpg"
-                                    media="(max-width: 767px)">
-                                <source srcset="images/Limited-tabl.jpg 1x , images/Limited-tabl@2x.jpg 2x" type="image/jpg"
-                                    media="(min-width: 768px) and (max-width: 1199px)">
                                 <source srcset="images/Limited-desk.jpg 1x , images/Limited-desk@2x.jpg 2x" type="image/jpg"
                                     media="(min-width: 1200px)">
+                                <source srcset="images/Limited-tabl.jpg 1x , images/Limited-tabl@2x.jpg 2x" type="image/jpg"
+                                    media="(min-width: 768px) and (max-width: 1199px)">
+                                <source srcset="images/Limited-tel.jpg 1x, images/Limited-tel@2x.jpg 2x" type="image/jpg"
+                                    media="(max-width: 767px)">
                                 <img src="images/img(7).jpg" alt="Дизайн" width="370">
                             </picture>
                             <div class="portfolio__animation">
@@ -262,12 +313,11 @@
                     <a class="portfolio__link" href="">
                         <div class="portfolio__box">
                             <picture>
-                                <source srcset="images/LAB-tel.jpg 1x, images/LAB-tel@2x.jpg 2x" type="image/jpg"
-                                    media="(max-width: 767px)">
+                                <source srcset="images/LAB-desk.jpg 1x , images/LAB-desk@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)">
                                 <source srcset="images/LAB-tabl.jpg 1x , images/LAB-tabl@2x.jpg 2x" type="image/jpg"
                                     media="(min-width: 768px) and (max-width: 1199px)">
-                                <source srcset="images/LAB-desk.jpg 1x , images/LAB-desk@2x.jpg 2x" type="image/jpg"
-                                    media="(min-width: 1200px)">
+                                <source srcset="images/LAB-tel.jpg 1x, images/LAB-tel@2x.jpg 2x" type="image/jpg"
+                                    media="(max-width: 767px)">
                                 <img src="images/img(8).jpg" alt="Маркетинг" width="370">
                             </picture>
                             <div class="portfolio__animation">
@@ -286,11 +336,11 @@
                     <a class="portfolio__link" href="">
                         <div class="portfolio__box">
                             <picture>
-                                <source srcset="images/Growing-tel.jpg 1x, images/Growing-tel@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)">
-                                <source srcset="images/Growing-tabl.jpg 1x , images/Growing-tabl@2x.jpg 2x" type="image/jpg"
-                                    media="(min-width: 768px) and (max-width: 1199px)">
                                 <source srcset="images/Growing-desk.jpg 1x , images/Growing-desk@2x.jpg 2x" type="image/jpg"
                                     media="(min-width: 1200px)">
+                                <source srcset="images/Growing-tabl.jpg 1x , images/Growing-tabl@2x.jpg 2x" type="image/jpg"
+                                    media="(min-width: 768px) and (max-width: 1199px)">
+                                <source srcset="images/Growing-tel.jpg 1x, images/Growing-tel@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)">
                                 <img src="images/img(9).jpg" alt="Приложение" width="370">
                             </picture>
                             <div class="portfolio__animation">
@@ -375,7 +425,7 @@
             <h2 class="form__title">Подпишитесь на рассылку</h2>
             <div class="form__container">
                 <label>
-                    <input class="form__mail" name="mail" type="mail" id="mails" placeholder="E-mail">
+                    <input class="form__mail" name="mail" type="email" id="mails" placeholder="E-mail">
                 </label>
                 <button class="form__button">Подписаться
                     <svg class="form__svg">

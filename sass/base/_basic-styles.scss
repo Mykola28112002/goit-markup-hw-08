@@ -17,6 +17,7 @@ h1, h2, h3, ul, li, p {
   padding: 0px;
 
 }
+
 header {
   background: $main-page-bascground;
 }
@@ -36,7 +37,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -77,21 +78,21 @@ ul {
   }
   &--background {
     background: #F5F4FA;
-    min-width: 480px;
     width: 100%;
   }
 }
 .section__title {
   font-weight: $font-weight-bold;
-  font-size: 36px;
   line-height: 1.2;
   text-align: center;
   color: $main-text-color;
   @media screen  and (max-width: 1199px) {
     margin-bottom: 30px;
+    font-size: 28px;
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -100,10 +101,5 @@ ul {
 }
 
 img {
-  @media screen  and (max-width: 767px) {
-    width: 450px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 354px;
-  }
+  width: 100%;
 }
